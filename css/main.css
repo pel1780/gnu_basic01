@@ -1,0 +1,252 @@
+body {
+    font-size: 16px;
+    font-family: 'Roboto', 'Noto Sans KR';
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.iframe_case {
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+.iframe_case iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* D */
+.header .top_banner {
+    border-bottom: 1px solid #ddd;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.header .inner {
+    justify-content: space-between;
+}
+
+.header .top_banner .top_link {
+    display: flex;
+
+}
+
+.header .top_banner .top_link li {
+    padding: 0 20px;
+    border-left: 1px solid #ddd;
+}
+
+.header .top_banner .top_link li:last-child {
+    border-right: 1px solid #ddd;
+}
+
+.header .head_container {
+    border-bottom: 1px solid #ddd;
+}
+
+.header .head_container .inner {
+    line-height: 100px;
+}
+
+.header h1 img {
+    height: 70px;
+}
+
+.header .gnb>ul {
+    display: flex;
+}
+
+.header .gnb>ul>li {
+    position: relative;
+}
+
+.header .gnb>ul>li>a {
+    display: inline-block;
+    font-size: 18px;
+    padding: 0 30px;
+}
+
+.header .gnb>ul>li~li::before {
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 13px;
+    background: #ddd;
+}
+
+.header .gnb>ul>li .submenu {
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+    width: 150px;
+    background: #fff;
+    border: 3px solid #8ab933;
+    line-height: 40px;
+    font-size: 13px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+}
+
+.header .gnb>ul>li:hover .submenu {
+    top: 90px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.header .gnb>ul>li .submenu li {
+    padding: 0 0 0 15px;
+}
+
+.header .gnb>ul>li .submenu li~li {
+    border-top: 1px solid #ddd;
+}
+
+/* header */
+.mainVisual {
+    position: relative;
+    padding: 100px 0;
+    border-bottom: 3px solid #8ab933;
+}
+
+.mainVisual::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../image/bg.jpg)no-repeat center center/cover;
+    filter: grayscale(0.7);
+    z-index: -1;
+}
+
+.mainVisual::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, transparent, rgba(255, 255, 255, 0.35));
+}
+
+.mainVisual .main_slider {
+    width: 800px;
+    margin: 0 auto;
+    z-index: 999;
+}
+
+.mainVisual .m_link {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 1200px;
+    line-height: 60px;
+    background: #fff;
+
+    z-index: 999;
+}
+
+.mainVisual .m_link>ul {
+    border: 3px solid #8ab933;
+    display: flex;
+}
+
+.mainVisual .m_link>ul>li {
+    flex: 1;
+    text-align: center;
+}
+
+.mainVisual .m_link>ul>li~li {
+    border-left: 1px solid #ddd;
+}
+
+.mainVisual .m_link>ul>li>a {
+    display: block;
+}
+
+.mainVisual .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    z-index: 999;
+
+    font-size: 0;
+    background: transparent;
+    border: none;
+    outline: none;
+
+    width: 50px;
+    height: 50px;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+}
+
+.mainVisual .slick-prev {
+    margin: 0 0 0 -560px;
+}
+
+.mainVisual .slick-next {
+    margin: 0 0 0 560px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.mainMap ._map_ {
+    width: 100%;
+    height: 300px;
+    filter: grayscale(0.3);
+    border-bottom: 1px solid #8ab933;
+}
+
+.mainCustomer {
+    padding: 50px 0;
+}
+
+.mainCustomer .inner {
+    gap: 60px;
+}
+
+.mainCustomer .inner>div {
+    flex: 1;
+    overflow: hidden;
+}
+
+.mainCustomer h3 {
+    line-height: 40px;
+    font-weight: 500;
+    font-family: 'Roboto', 'Noto Sans KR';
+    border-bottom: 1px solid #8ab933;
+}
+
+.mainCustomer h3 a {
+    float: right;
+}
+
+.footer {
+    padding: 30px 0;
+    background: #334433;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer ul {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
